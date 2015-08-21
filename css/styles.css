@@ -14,7 +14,7 @@ License: Free to use for personal and commercial, but you need to place back lin
 }
 
 body {
-    font-size: 14px;
+    /*font-size: 20px;*/
     font-family: 'Source Sans Pro', sans-serif;
     -webkit-font-smoothing: antialiased;
     background: #E4E4E4;
@@ -32,7 +32,9 @@ body {
 
 p {
     color: #858585;
-	line-height:22px;
+	line-height:25px; 
+
+
 }
 .white{
 	background:#fff;
@@ -417,18 +419,27 @@ background: none;
 padding:50px 0;
 background:#fff;
 }
+#aboutUs p{
+
+    font-size: 20px;
+}
+
+#aboutUs .txtHead h3{
+
+    font-size: 30px;
+}
 
 #aboutUs .txtHead{
 background:#fff;
 padding:20px 10px;
 }
 #aboutUs .txtHead .fa {
-font-size: 58px;
+font-size: 70px;
 color: #5E5E5E;
 }
 .tileBox p{
     background-color: #f0f0f0;
-font-size: 15px;
+
 color: #777777;
 padding: 20px;
 margin: 0px;
