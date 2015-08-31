@@ -1,4 +1,59 @@
 
+<?php
+    if (isset($_POST["submit"])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $human = intval($_POST['human']);
+        $from = 'Tedwu.net'; 
+        $to = 'wuted.cpen@gmail.com'; 
+        $subject = 'Message from Tedwu.net ';
+        $posted = false;
+        $sent = false;
+        
+        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+ 
+        // Check if name has been entered
+        if (!$_POST['name']) {
+            $errName = 'Please enter your name';
+            $posted = true;
+            $errormsg .= " \\n name  ";
+        }
+        
+        // Check if email has been entered and is valid
+        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $errEmail = 'Please enter a valid email address';
+            $posted = true;
+            $errormsg .= "\\n email  ";
+        }
+        
+        //Check if message has been entered
+        if (!$_POST['message']) {
+            $errMessage = 'Please enter your message';
+            $posted = true;
+            $errormsg .= "\\n message  ";
+        }
+        //Check if simple anti-bot test is correct
+        if ($human !== 5) {
+            $errHuman = 'Your anti-spam is incorrect';
+            $posted = true;
+            $errormsg .= "\\n anti-spam ";
+        }
+ 
+// If there are no errors, send the email
+    if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+        if (mail ($to, $subject, $body, $from)) {
+            $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+            $sent= true;
+
+        } else {
+            $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+            $sent= false;
+        }
+    }
+        }
+?>
+
 <!DOCTYPE html>
 <!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
@@ -533,9 +588,32 @@
                 </div>
             </div>
 
+
             <div class="row mrgn30">
 
                 <form method="post" action="index.php" id="contactfrm" role="form">
+
+                          <?php
+                            if( $posted  ) {
+                              if( !$_POST['name'] || !$_POST['email'] || !$_POST['message'] || ($human !== 5) ) 
+                                echo "<script type='text/javascript'>alert('Your submission was unsuccessful because one of the following info is incorrect: $errormsg')</script>";
+                            }
+
+                             if (!$errName && !$errEmail && !$errMessage && !$errHuman){
+                                if( $sent){
+                                    echo "<script type='text/javascript'>alert('Your message is delivered !')</script>" ;
+                                }
+                                else{
+                                
+                                    echo "<script type ='text/javascript'>alert('Your message is NOT delivered due to the internet connection, please try again later!')</script>";
+
+                                }
+
+
+                             }
+
+                          ?>
+
 
                     <div class="col-sm-4">
                         <div class="form-group">
@@ -562,7 +640,7 @@
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea name="message" class="form-control" id="message" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"> <?php echo htmlspecialchars($_POST['message']);?> </textarea>
+                            <textarea name="message" class="form-control" id="message" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"><?php echo htmlspecialchars($_POST['message']);?></textarea>
                             <?php echo "<p class='text-danger'>$errMessage</p>";?>
                         </div>
                         <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
@@ -629,48 +707,3 @@
 </body>
 </html>
 
-
-<?php
-    if (isset($_POST["submit"])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $human = intval($_POST['human']);
-        $from = 'Tedwu.net'; 
-        $to = 'wuted.cpen@gmail.com'; 
-        $subject = 'Message from Tedwu.net ';
-        
-        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
- 
-        // Check if name has been entered
-        if (!$_POST['name']) {
-            $errName = 'Please enter your name';
-        }
-        
-        // Check if email has been entered and is valid
-        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $errEmail = 'Please enter a valid email address';
-        }
-        
-        //Check if message has been entered
-        if (!$_POST['message']) {
-            $errMessage = 'Please enter your message';
-        }
-        //Check if simple anti-bot test is correct
-        if ($human !== 5) {
-            $errHuman = 'Your anti-spam is incorrect';
-        }
- 
-// If there are no errors, send the email
-    if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
-        if (mail ($to, $subject, $body, $from)) {
-            $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-
-
-        } else {
-            $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-            
-        }
-    }
-        }
-?>
