@@ -42,6 +42,7 @@
  
 // If there are no errors, send the email
     if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+            $posted = true;
         if (mail ($to, $subject, $body, $from)) {
             $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
             $sent= true;
@@ -599,7 +600,7 @@
                                 echo "<script type='text/javascript'>alert('Your submission was unsuccessful because one of the following info is incorrect: $errormsg')</script>";
                             }
 
-                             if (!$errName && !$errEmail && !$errMessage && !$errHuman){
+                             if (!$errName && !$errEmail && !$errMessage && !$errHuman && $posted){
                                 if( $sent){
                                     echo "<script type='text/javascript'>alert('Your message is delivered !')</script>" ;
                                 }
@@ -701,7 +702,7 @@
     <script src="js/jquery.cslider.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="js/owl-carousel/owl.carousel.js"></script>
-    <script src="form.php"></script>
+
 
 
 </body>
