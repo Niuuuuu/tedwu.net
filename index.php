@@ -602,7 +602,7 @@
 
                              if (!$errName && !$errEmail && !$errMessage && !$errHuman && $posted){
                                 if( $sent){
-                                    echo "<script type='text/javascript'>alert('Your message is delivered !')</script>" ;
+                                    echo "<script type='text/javascript'>alert('Your message is delivered, I will get in touch with you ASAP :D')</script>" ;
                                 }
                                 else{
                                 
@@ -650,16 +650,13 @@
                     </div>
                 </form>
                 <div class="col-sm-4">
-                    <h4>Address:</h4>
-                    <address>
-                        Burnaby <br>
-                        
-                        
-                    </address>
-                    <h4>Phone:</h4>
-                    <address>
-                        +1-778-858-7582 <br>
-                    </address>
+                                   
+                         <h3> Contact Me </h3>
+                              <ul>
+                                    <li class="contact-bottom"><img class="contact-icon"src="images/map_icon.png" alt="marker image" />Burnaby, British Columbia, Canada</li>
+                                    <li class="contact-bottom"><img class="contact-icon" src="images/phone_icon.png" alt="phone image"/>+1-778-858-7592</li>
+                                    <li class="contact-bottom"><img class="contact-icon" src="images/mail_icon.png" alt="mail image"/>Ted@TedWu.net</li>                                   
+                             </ul>
                 </div>
             </div>
         </div>
