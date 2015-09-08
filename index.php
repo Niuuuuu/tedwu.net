@@ -69,8 +69,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
     <title>Ted Wu | Welcome !</title>
-    <meta name="description" content="">
-    <meta name="author" content="WebThemez">
+    <meta name="Protfolio site for Ted Wu" content="">
+    <meta name="Ted Wu" content="">
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -427,145 +427,199 @@
     
   
    <!--Portfolio-->
-   <script> /*<section id="portfolio" class="page-section section appear clearfix secPad">
+   <section id="portfolio" class="page-section section appear clearfix secPad">
         <div class="container">
 
             <div class="heading text-center">
                 <!-- Heading -->
                 <h2>Portfolio</h2>
-                <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+                <p>Below are the collections of my projects in my school years and internship experience</p>
             </div>
 
             <div class="row">
                 <nav id="filter" class="col-md-12 text-center">
                     <ul>
                         <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web Design</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
+                        <li><a href="#" class="btn-theme btn-small" data-filter=".school">School Projects</a></li>
+                        <li><a href="#" class="btn-theme btn-small" data-filter=".work">Work Projects</a></li>
+                        <li><a href="#" class="btn-theme btn-small" data-filter=".self">Side Projects</a></li>
                     </ul>
                 </nav>
                 <div class="col-md-12">
                     <div class="row">
                         <div class="portfolio-items isotopeWrapper clearfix" id="3">
 
-                            <article class="col-sm-4 isotopeItem webdesign">
+
+
+                          <article class="col-sm-4 isotopeItem work">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img1.jpg" alt="" />
+                                    <img src="images/portfolio/streeXB-app.png" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img1.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/portfolio/streeXB-app.png" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                                <h5>KSBI Radio App</h5>
+                                                <h6>PhoneGap+html+css+js</h6>
+                                                </a>
+
+                                                <a href="https://play.google.com/store/apps/details?id=ca.ksbi.ksbiradio&hl=en" target="_blank"><br><i class="fa fa-external-link"></i> Google Play</a>
+                                    
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="col-sm-4 isotopeItem photography">
+                            <article class="col-sm-4 isotopeItem school">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img2.jpg" alt="" />
+                                    <img src="images/portfolio/tiny-plat.png" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img2.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/portfolio/tiny-plat.png" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                                <h5>Tiny Platformer</h5>
+                                                <h6>Javascript webgame </h6>
+                                                </a>
+                                                <a href="http://niuuuuu.github.io/javascript-tiny-platformer/" target="_blank"><br>Website</a>
+                                                <a href="https://github.com/Niuuuuu/javascript-tiny-platformer" target="_blank"><i class="fa fa-external-link"></i> Github Source code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            
+
+
+                            <article class="col-sm-4 isotopeItem self">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/universe.png" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="images/portfolio/universe-gameplay.png" class="fancybox"> 
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                                <h5>Universe Roaming</h5>
+                                                <h6>Java desktop game </h6>
+                                               </a>
+                                               <a href="https://github.com/Niuuuuu/universeRoaming" target="_blank"><br><i class="fa fa-external-link"></i> Github Source code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+     
+                            <article class="col-sm-4 isotopeItem work">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/iindieartisthub.png" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="images/portfolio/iindieartisthub.png" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                                <h5>StreeXB Ent. Official Site</h5>
+                                                <h6>Wordpress Site</h6>
+                                                </a>
+
+                                                <a href="https://indieartisthub.com" target="_blank"><br><i class="fa fa-external-link"></i> Website</a>
+
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
 
-                            <article class="col-sm-4 isotopeItem photography">
+
+      
+
+                         
+
+                            <article class="col-sm-4 isotopeItem school">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img3.jpg" alt="" />
+                                    <img src="images/portfolio/3D-Visualization.gif" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img3.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/portfolio/3D-Visualization.gif" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                                <h5>Telus Data Visualizer</h5>
+                                                <h6>Three.js+php</h6>
+                                                </a>
+
+                                                <a href="https://github.com/Niuuuuu/3D_Visualization" target="_blank"><br><i class="fa fa-external-link"></i> Github Source code</a>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="col-sm-4 isotopeItem print">
+     
+
+                            <article class="col-sm-4 isotopeItem self">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img4.jpg" alt="" />
+                                    <img src="images/portfolio/html calculator.png" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img4.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/portfolio/html calculator.png" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                                <h5>HTML Calculator</h5>
+                                                <h6>HTML + Jquery</h6>
+                                                </a>
+                                                <a href="http://niuuuuu.github.io/html-calculator/" target="_blank"><br>Website</a>
+                                                <a href="https://github.com/Niuuuuu/html-calculator" target="_blank"><i class="fa fa-external-link"></i> Github Source code</a>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="col-sm-4 isotopeItem photography">
+                             <article class="col-sm-4 isotopeItem school">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img5.jpg" alt="" />
+                                    <img src="images/portfolio/pacman.png" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img5.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/portfolio/pacman.png" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                                <h5>PacMan</h5>
+                                                <h6>Jave desktop game </h6>
+                                                </a>
+
+                                                <a href="https://github.com/Niuuuuu/UndoableJpacman" target="_blank"><br><i class="fa fa-external-link"></i> Github Source code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>  
+
+                            <article class="col-sm-4 isotopeItem school">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/libgdx.png" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="images/portfolio/libgdx-gameplay.jpeg" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                                <h5>Fruit Catch</h5>
+                                                <h6>Andriod mobile game </h6>
+                                                </a>
+
+                                                <a href="https://github.com/Niuuuuu/fruitcatch" target="_blank"><br><i class="fa fa-external-link"></i> Github Source code</a>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="col-sm-4 isotopeItem webdesign">
+                             <article class="col-sm-4 isotopeItem work">
                                 <div class="portfolio-item">
-                                    <img src="images/portfolio/img6.jpg" alt="" />
+                                    <img src="images/portfolio/mcumall.png" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img6.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                            <a href="images/portfolio/mcumall.png" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i>
+                                                <h5>USB Programmer</h5>
+                                                <h6>QA testing</h6>
+                                                </a>
+
+                                                
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
-                            <article class="col-sm-4 isotopeItem print">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img7.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img7.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
 
-                            <article class="col-sm-4 isotopeItem photography">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img8.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img8.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
 
-                            <article class="col-sm-4 isotopeItem print">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img9.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img9.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+
                         </div>
 
                     </div>
@@ -575,7 +629,7 @@
             </div>
 
         </div>
-    </section>  */ </script>
+    </section> 
 
     <!--Contact -->
     <section id="contactUs" class="page-section secPad">
@@ -665,11 +719,11 @@
     <footer>
         <div class="container">
             <div class="social text-center">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"><i class="fa fa-flickr"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="https://ca.linkedin.com/in/wuted" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Niuuuuu"    target="_blank"><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href="mailto:ted@tedwu.net" target="_blank"><i class="fa fa-comment"></i></a>
+                <a href="http://tedwu.net/"><i class="fa fa-dribbble"></i></a>
             </div>
 
             <div class="clear"></div>
