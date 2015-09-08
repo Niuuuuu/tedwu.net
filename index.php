@@ -110,6 +110,7 @@
                         <li><a href="#experience" class="scroll-link">Experience</a></li>
                         <li><a href="#portfolio" class="scroll-link">Projects</a></li>
                         <li><a href="#contactUs" class="scroll-link">Contact Me</a></li>
+                        <li><a href="http://tedwu.net/tedwu.net/Ted_Resume.pdf" target="_blank">Resume</a></li>
                     </ul>
                 </div>
                 <!--/.navbar-collapse-->
